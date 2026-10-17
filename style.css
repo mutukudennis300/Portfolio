@@ -26,7 +26,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header { position: sticky; top: 0; z-index: 100; background: rgba(247,245,239,.92); border-bottom: 1px solid rgba(23,63,53,.08); backdrop-filter: blur(16px); }
 .nav { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font: 800 1.12rem var(--font-display); letter-spacing: -.04em; }
-.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; color: var(--cream); background: var(--forest); border-radius: 50% 50% 50% 10px; font-size: .9rem; letter-spacing: 0; }
+.brand-logo { display: block; width: 66px; height: 66px; object-fit: contain; }
 .brand-dot { color: var(--gold); }
 .nav-links { display: flex; align-items: center; gap: 30px; font-size: .86rem; font-weight: 600; color: #42514a; }
 .nav-links > a:not(.nav-cta) { transition: color .2s ease; }
@@ -55,10 +55,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .meta-divider { color: var(--gold); margin: 0 4px; }
 .hero-visual { min-height: 470px; position: relative; display: grid; place-items: center; }
 .portrait-frame { width: min(350px, 78%); height: 410px; padding: 12px; border: 1px solid rgba(199,167,108,.65); position: relative; transform: rotate(2deg); background: rgba(255,254,250,.35); }
-.portrait-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(145deg, #d9dfd4, #e9e1d0 56%, #d0d9cf); color: var(--forest); }
-.portrait-initials { font: 800 7rem/.95 var(--font-display); letter-spacing: -.1em; }
-.portrait-initials span { color: var(--gold); }
-.portrait-placeholder p { margin-top: 14px; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+.profile-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 28%; }
 .frame-corner { position: absolute; width: 34px; height: 34px; border-color: var(--gold); border-style: solid; }
 .corner-tl { top: -7px; left: -7px; border-width: 2px 0 0 2px; }
 .corner-br { bottom: -7px; right: -7px; border-width: 0 2px 2px 0; }
@@ -66,7 +63,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .floating-card strong, .floating-card small { display: block; }
 .floating-card strong { font: 700 .79rem var(--font-display); color: var(--forest); }
 .floating-card small { color: #849089; font-size: .67rem; margin-top: 2px; }
-.card-top { top: 62px; right: -2px; }
+.card-top { top: 10px; right: -2px; }
 .card-bottom { bottom: 55px; left: -12px; }
 .mini-icon, .mini-check { display: grid; place-items: center; width: 33px; height: 33px; border-radius: 50%; background: #f2ead9; color: #9c8354; font-size: 1rem; }
 .mini-check { background: #e2eee5; color: var(--forest); }
@@ -182,7 +179,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-footer { background: #0c2722; color: #dbe1db; }
 .footer-main { min-height: 104px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid rgba(247,245,239,.12); }
 .footer-brand { color: var(--cream); }
-.footer-brand .brand-mark { background: #e8e3d6; color: var(--forest); }
 .footer-main p { color: #8ea096; font-size: .78rem; margin: 0; }
 .back-top { color: #d4c092; font-size: .77rem; }
 .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; color: #73857b; font-size: .68rem; }
@@ -196,7 +192,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-visual { min-height: 420px; }
   .portrait-frame { height: 355px; width: 82%; }
   .floating-card { padding: 11px 12px; }
-  .card-top { right: -5px; top: 47px; }
+  .card-top { display: none; }
   .card-bottom { left: -3px; bottom: 44px; }
   .two-column, .experience-grid { gap: 50px; }
   .contact-grid { gap: 45px; }
@@ -216,7 +212,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-description { font-size: .96rem; margin: 20px 0 24px; }
   .hero-visual { min-height: 400px; margin-top: 15px; }
   .portrait-frame { height: 350px; width: min(300px, 75%); }
-  .card-top { right: 0; top: 44px; }
   .card-bottom { left: 0; bottom: 44px; }
   .hero-bottom { margin-top: 18px; }
   .strip-inner { justify-content: flex-start; overflow: hidden; gap: 14px; font-size: .6rem; }
