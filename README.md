@@ -14,7 +14,7 @@ A responsive personal portfolio built with plain HTML, CSS, and JavaScript.
 
 ## Personalise before publishing
 1. The portfolio currently uses the display name `Mutuku` and the professional headline `Business Management & Digital Solutions`. Update these if you prefer different wording.
-2. The public contact email is `mutukudennis300@gmail.com`. Update it in `index.html` and `script.js` if it changes.
+2. The public contact email is `mutukudennis300@gmail.com`, and the WhatsApp contact is `0716863607`. Update the contact details in `index.html` if they change.
 3. Add your professional photo when ready. You can replace the `.portrait-placeholder` block in `index.html` with:
    ```html
    <img class="profile-photo" src="images/profile.jpg" alt="Mutuku, Business Management professional">
